@@ -14,10 +14,18 @@ class DeleteEventScreen extends Component {
    
   }
 
+  componentDidMount(){
+       // (Platform.OS === 'ios' || Platform.OS === 'andoroid')  &&
+       Calendar.requestCalendarPermissionsAsync().then(status => console.log({status}) )
+       //Calendar.requestPermissionsAsync( ).then(status => console.log({status}) )
+       //(Platform.OS === 'ios' || Platform.OS === 'andoroid')  &&
+        Calendar.requestRemindersPermissionsAsync().then(status => console.log({status}))
+          
+  }
    render() {
     return (
       <View >
-        <Text>events count: {this.props.route.params['eventIds'].length} </Text>
+        <Text> </Text>
         
         <Button title="Delete" />
         <Button title="Cancel" />

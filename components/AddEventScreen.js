@@ -54,8 +54,8 @@ class AddEventScreen extends Component {
   componentDidMount() {  
     
     
-    Calendar.requestCalendarPermissionsAsync().then(status => console.log({status}) )
-    Calendar.requestRemindersPermissionsAsync().then(status => console.log({status}))
+    //Calendar.requestCalendarPermissionsAsync().then(status => console.log({status}) )
+    //Calendar.requestRemindersPermissionsAsync().then(status => console.log({status}))
     Calendar.getCalendarsAsync().then(cals => this.setState({ calendars: cals  }))
     
   

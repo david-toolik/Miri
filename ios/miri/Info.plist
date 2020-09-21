@@ -55,5 +55,10 @@
 	<false/>
   <key>UIStatusBarStyle</key>
   <string>UIStatusBarStyleDefault</string>
+  <key>NSCalendarsUsageDescription</key>
+  <string>Allow $(PRODUCT_NAME) to access your calendar</string>
+  <key>NSRemindersUsageDescription</key>
+  <string>Allow $(PRODUCT_NAME) to access your reminders</string>
+
 </dict>
 </plist>

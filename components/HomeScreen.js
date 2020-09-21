@@ -15,7 +15,7 @@ export function HomeScreen({ navigation }) {
         <Text style={{ fontSize: 24 }} >שלום וברוך הבא</Text>
         
         <Button
-          title="הוסף אירוע"
+          title="?הוסף אירוע"
           onPress={() => navigation.navigate('הוסף אירוע')}
         />
         <Button
@@ -25,6 +25,10 @@ export function HomeScreen({ navigation }) {
          <Button
           title="בלתמ"
           onPress={() => navigation.navigate('בלתמ')}
+        />
+        <Button
+        title="emply"
+        onPress={()=> navigation.navigate('empty')}
         />
       </View>
     );

@@ -19,10 +19,9 @@ export default function App () {
       <Stack.Screen name="הוסף אירוע" component={AddEventScreen} />
       <Stack.Screen name="רשימת אירועים" component={EventListScreen} />
       <Stack.Screen name="בלתמ" component={IntentScreen} />
-      <Stack.Screen name="מחק אירוע" component={DeleteEventScreen} />
-    
+      <Stack.Screen name="empty" component={DeleteEventScreen} />
+
     </Stack.Navigator>
   </NavigationContainer>
-
   );
 };
